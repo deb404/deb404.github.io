@@ -2,17 +2,65 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deb 404 - Data Not Found</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deb404 | Fintech Analyst Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .floating {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .sparkles {
+      font-size: 1.2rem;
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
 </head>
 <body>
-  <section class="hero">
-    <img src="assets/images/deb-robot.png" alt="Deb 404 Mascot" class="mascot" />
-    <h1>Oops! Insight Not Found</h1>
-    <p>Just kidding. Welcome to my data analytics lab.</p>
-    <a href="projects.html" class="btn">Explore Portfolio</a>
-  </section>
+  <header>
+    <nav>
+      <h1><a href="index.html">Deb404</a></h1>
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="floating">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Purple_blob_mascot_placeholder.svg" alt="Deb the Blob Mascot" width="120" style="border-radius: 50%;" />
+      </div>
+      <h2>404? More like Insight Found.</h2>
+      <p>Welcome to <strong>Deb404</strong> — a data analyst's portfolio that turns numbers into narratives (with sparkles ✨).</p>
+      <p class="sparkles">Scroll down or explore the links to discover case studies, tools, and a little bit of pastel magic.</p>
+    </section>
+
+    <section class="project-list">
+      <div class="project-card">
+        <h3>Featured: 📊 Financial Forecasting with Empathy</h3>
+        <p>Explore how I use analytics to support mental health, social sustainability, and transparent decision-making.</p>
+        <a href="projects.html">See Projects →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Deb404 | Insight, but cuter.</p>
+  </footer>
 </body>
 </html>
 
