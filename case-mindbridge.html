@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindBridge Analytics | Deb404</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1><a href="index.html">Deb404</a></h1>
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Case Study: MindBridge App Analytics</h2>
+      <p>How we used behavioral data to improve mental health outcomes for app users.</p>
+    </section>
+
+    <section class="project-list">
+      <div class="project-card">
+        <h3>🧩 Problem</h3>
+        <p>MindBridge is a mental health support app offering journaling, CBT prompts, and AI-guided check-ins. Usage was growing, but engagement was low beyond day 3. What features actually helped users stick with their wellness plans?</p>
+      </div>
+
+      <div class="project-card">
+        <h3>🔍 Approach</h3>
+        <p>I analyzed anonymized in-app event data (sessions, prompt completions, mood logs) for 5,000 users over 30 days. Used cohort analysis, retention curves, and clustering (K-means) to identify engagement drivers.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>📈 Outcome</h3>
+        <p>Discovered that users who logged moods in the first 48 hours had a 2.3x higher 14-day retention rate. We redesigned onboarding to emphasize mood tracking. Post-launch A/B test showed a 19% improvement in user retention.</p>
+      </div>
+
+      <div class="project-card">
+        <h3>💡 Key Takeaways</h3>
+        <ul>
+          <li>Behavior-first segmentation is powerful in mental health products.</li>
+          <li>Early habit formation predicts app longevity.</li>
+          <li>Analytics must balance insight with empathy — we respected privacy, excluded sensitive notes, and used opt-in data only.</li>
+        </ul>
+      </div>
+
+      <div class="project-card">
+        <h3>🛠️ Tools Used</h3>
+        <ul>
+          <li>SQL (BigQuery) for event funnel analysis</li>
+          <li>Python (Pandas, Seaborn) for clustering and visualization</li>
+          <li>Amplitude for user journey insights</li>
+          <li>Figma for presenting data-backed UI recommendations</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Deb404 | Data for healing minds.</p>
+  </footer>
+</body>
+</html>
