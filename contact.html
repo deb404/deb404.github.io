@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<link rel="stylesheet" href="assets/styles.css">
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | deb404</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Deb404</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="page-container">
-        <header class="header">
-            <h1>404 Contact</h1>
-            <p>Oops! You've found the "Contact" page, but this page might need a little more direction. Don’t worry though, I’ll help you connect!</p>
-        </header>
+  <header>
+    <nav>
+      <h1><a href="index.html">Deb404</a></h1>
+      <ul>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <section class="content">
-            <h2>Let's Connect!</h2>
-            <p>I love connecting with people. If you have any questions, feel free to reach out, even if it’s a 404 moment!</p>
-            <form action="submit_form.php" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+  <main>
+    <section class="hero">
+      <h2>Let's Connect</h2>
+      <p>I’d love to hear from you! Whether it’s a collaboration, question, or cute data pun — reach out below.</p>
+    </section>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+    <section class="project-list">
+      <div class="project-card">
+        <h3>📧 Email</h3>
+        <p><a href="mailto:hello@deb404.com">hello@deb404.com</a></p>
+      </div>
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+      <div class="project-card">
+        <h3>🌐 LinkedIn</h3>
+        <p><a href="https://linkedin.com/in/deborahwillson" target="_blank">linkedin.com/in/deb404</a></p>
+      </div>
 
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+      <div class="project-card">
+        <h3>📁 GitHub</h3>
+        <p><a href="https://deb404.github.io/" target="_blank">github.com/deb404</a></p>
+      </div>
+    </section>
+  </main>
 
-        <footer class="footer">
-            <p>© 2025 deb404. All rights reserved.</p>
-        </footer>
-    </div>
+  <footer>
+    <p>© 2025 Deb404 | Thanks for stopping by 💜</p>
+  </footer>
 </body>
 </html>
