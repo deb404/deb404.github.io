@@ -1,3 +1,36 @@
+:root {
+  --bg: #ffffff;
+  --text: #222;
+  --accent: #8854d0;
+  --card: #f5f0ff;
+  --border: #d8c4f2;
+}
+
+body.pastel-mode {
+  --bg: #fef6ff;
+  --text: #4b3b63;
+  --accent: #d28fff;
+  --card: #fff4fb;
+  --border: #ecccfb;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Update your existing elements to use variables */
+.project-card {
+  background-color: var(--card);
+  border: 2px solid var(--border);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+}
+
 /* Base Reset */
 * {
   margin: 0;
