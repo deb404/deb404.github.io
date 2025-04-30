@@ -67,3 +67,19 @@
 </body>
 </html>
 
+<script>
+  const toggle = document.getElementById('themeToggle');
+  const prefersPastel = localStorage.getItem('pastelMode') === 'true';
+
+  if (prefersPastel) {
+    document.body.classList.add('pastel-mode');
+  }
+
+  toggle.addEventListener('click', () => {
+    document.body.classList.toggle('pastel-mode');
+    const enabled = document.body.classList.contains('pastel-mode');
+    localStorage.setItem('pastelMode', enabled);
+  });
+</script>
+
+
