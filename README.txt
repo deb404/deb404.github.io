@@ -43,9 +43,8 @@ You'll see pastel palettes, friendly robots, and light-hearted designs, because 
 ## 📫 Contact Me
 
 - 🌐 [deb404.com](https://deb404.com)
-- 🐦 [@deb404data](https://twitter.com/deb404data)
 - 💼 [LinkedIn](https://linkedin.com/in/deb404)
-- 📧 deb404@proton.me
+- 📧 hello@deb404.com
 
 ---
 
