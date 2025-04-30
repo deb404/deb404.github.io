@@ -1,30 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #fef6fb;
-  color: #5e4b56;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
-.hero {
-  padding: 60px 20px;
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.mascot {
-  width: 120px;
-  margin-bottom: 20px;
+.header {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 40px;
+    text-align: center;
 }
 
-h1 {
-  font-size: 3rem;
-  color: #b67edc;
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
 }
 
-.btn {
-  background: #b67edc;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
+.content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.content h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.projects-list {
+    list-style: none;
+    padding: 0;
+}
+
+.projects-list li {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4f4f;
 }
