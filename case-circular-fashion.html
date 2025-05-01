@@ -39,6 +39,116 @@
         <h3>🌍 Outcome</h3>
         <p>Identified key cost-saving and environmental benefits of reuse. Visuals used by a fashion NGO campaign.</p>
       </div>
+
+      🎯 Project Title: Enhancing Google Ads ROI by Targeting Affluent Neighborhoods in North Austin
+🧠 Business Context
+
+A regional eCommerce company allocates a significant portion of its advertising budget to Google Ads across the Austin area. Preliminary analyses suggest that ads perform better in affluent neighborhoods. The company seeks to:
+
+    Identify high-performing, high-income neighborhoods in North Austin.
+
+    Optimize ad spend by focusing on these areas.
+
+    Increase overall Return on Ad Spend (ROAS).
+
+🧪 Methods Used
+
+    SQL: Merge Google Ads performance data with demographic information.
+
+    Python: Analyze trends and perform regression analysis.
+
+    Excel: Utilize pivot tables for quick summaries.
+
+    Tableau: Create interactive dashboards to visualize performance metrics geographically.
+
+📊 Data Sources
+Source	Description
+Google Ads Export (CSV)	Clicks, Impressions, Conversions, Cost
+ZIP Code Demographics	Median Household Income per ZIP code
+U.S. Census Data	Additional demographic information
+🧮 Step-by-Step Analysis
+1. Identify High-Income ZIP Codes in North Austin
+
+Based on recent data:
+
+    78717: Median household income of $136,960.
+
+    78750: Median household income of $123,722.
+
+    78759: Recognized as an affluent ZIP code in Northwest Austin.
+
+    78731: Includes neighborhoods like Northwest Hills with higher income levels.
+
+These ZIP codes are identified as affluent areas within North Austin.
+2. SQL: Merge Google Ads Data with Demographics
+
+SELECT 
+  ads.zip_code,
+  ads.clicks,
+  ads.cost,
+  ads.conversions,
+  demo.median_income
+FROM google_ads_data ads
+JOIN zip_code_demographics demo
+  ON ads.zip_code = demo.zip_code;
+
+3. Excel: Pivot Table Analysis
+
+Create a pivot table to analyze:
+
+    ROAS by ZIP code.
+
+    Conversion rates.
+
+    Cost per acquisition (CPA).
+
+This will help in identifying which ZIP codes yield the highest returns.
+4. Python: Regression Analysis
+
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load merged data
+df = pd.read_csv('merged_data.csv')
+
+# Scatter plot of median income vs. conversion rate
+sns.scatterplot(data=df, x='median_income', y='conversion_rate')
+plt.title('Median Income vs. Conversion Rate')
+plt.show()
+
+This analysis can reveal correlations between income levels and conversion rates.
+5. Tableau: Interactive Dashboard
+
+Develop a dashboard showcasing:
+
+    Geographic distribution of ROAS.
+
+    Heatmaps indicating high-performing ZIP codes.
+
+    Filters to view data by product category or time frame.
+
+📈 Insights
+
+    Higher-Income Areas Perform Better: ZIP codes like 78717 and 78750 show higher conversion rates and ROAS.
+
+    Cost Efficiency: Lower CPA observed in affluent neighborhoods.
+
+    Potential for Budget Reallocation: Shifting budget towards high-income ZIP codes could improve overall ROI.
+
+📢 Recommendations
+
+    Refine Targeting: Focus Google Ads on identified high-income ZIP codes in North Austin.
+
+    Budget Reallocation: Allocate more budget to top-performing areas while reducing spend in lower-performing regions.
+
+    Customized Ad Creatives: Develop ad content that resonates with the demographics of affluent neighborhoods.
+
+    Monitor and Adjust: Continuously monitor performance metrics and adjust strategies accordingly.
+
+🧾 Conclusion
+
+By leveraging data analytics to focus on affluent neighborhoods in North Austin, the company can optimize its Google Ads strategy, leading to improved conversion rates and a higher return on investment. This targeted approach ensures efficient use of advertising budgets and maximizes profitability.
     </section>
   </main>
 
